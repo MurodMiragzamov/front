@@ -10,7 +10,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:8030/newUser", {
+    const res = await fetch("https://my-backend-log.herokuapp.com/newUser", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
